@@ -18,9 +18,6 @@ class Preprocessor:
                         Output: A pandas DataFrame after removing the spaces.
                         On Failure: Raise Exception
 
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
 
                 """
         self.logger_object.log(self.file_object, 'Entered the remove_unwanted_spaces method of the Preprocessor class')
@@ -46,10 +43,6 @@ class Preprocessor:
                 Description: This method removes the given columns from a pandas dataframe.
                 Output: A pandas DataFrame after removing the specified columns.
                 On Failure: Raise Exception
-
-                Written By: iNeuron Intelligence
-                Version: 1.0
-                Revisions: None
 
         """
         self.logger_object.log(self.file_object, 'Entered the remove_columns method of the Preprocessor class')
@@ -148,9 +141,7 @@ class Preprocessor:
                                                         Output: A dataframe with scaled
                                                         On Failure: Raise Exception
 
-                                                        Written By: iNeuron Intelligence
-                                                        Version: 1.0
-                                                        Revisions: None
+      
                                      """
         self.logger_object.log(self.file_object,
                                'Entered the scale_numerical_columns method of the Preprocessor class')
