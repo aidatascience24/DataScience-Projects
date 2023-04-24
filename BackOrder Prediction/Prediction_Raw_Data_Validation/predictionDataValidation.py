@@ -16,9 +16,6 @@ class Prediction_Data_validation:
     """
                This class shall be used for handling all the validation done on the Raw Prediction Data!!.
 
-               Written By: iNeuron Intelligence
-               Version: 1.0
-               Revisions: None
 
                """
 
@@ -34,10 +31,6 @@ class Prediction_Data_validation:
                                 Description: This method extracts all the relevant information from the pre-defined "Schema" file.
                                 Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
                                 On Failure: Raise ValueError,KeyError,Exception
-
-                                 Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
 
                                         """
         try:
@@ -88,10 +81,6 @@ class Prediction_Data_validation:
                                       Output: Regex pattern
                                       On Failure: None
 
-                                       Written By: iNeuron Intelligence
-                                      Version: 1.0
-                                      Revisions: None
-
                                               """
         regex = "['BackOrder']+['\_'']+[\d_]+[\d]+\.csv"
         return regex
@@ -106,9 +95,6 @@ class Prediction_Data_validation:
                                         Output: None
                                         On Failure: OSError
 
-                                         Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
 
                                                 """
         try:
@@ -134,10 +120,6 @@ class Prediction_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
-
                                                     """
         try:
             path = 'Prediction_Raw_Files_Validated/'
@@ -162,9 +144,6 @@ class Prediction_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
 
                                                     """
 
@@ -191,10 +170,6 @@ class Prediction_Data_validation:
                                                           files to send them back to the client for invalid data issue.
                                             Output: None
                                             On Failure: OSError
-
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
 
                                                     """
         now = datetime.now()
@@ -236,10 +211,6 @@ class Prediction_Data_validation:
                          to Bad Raw Data folder else in Good raw data.
             Output: None
             On Failure: Exception
-
-             Written By: iNeuron Intelligence
-            Version: 1.0
-            Revisions: None
 
         """
         # delete the directories for good and bad data in case last run was unsuccessful and folders were not deleted.
@@ -290,9 +261,6 @@ class Prediction_Data_validation:
                     Output: None
                     On Failure: Exception
 
-                     Written By: iNeuron Intelligence
-                    Version: 1.0
-                    Revisions: None
 
              """
         try:
@@ -334,11 +302,6 @@ class Prediction_Data_validation:
                                                SUch files are moved to bad raw data.
                                   Output: None
                                   On Failure: Exception
-
-                                   Written By: iNeuron Intelligence
-                                  Version: 1.0
-                                  Revisions: None
-
                               """
         try:
             f = open("Prediction_Logs/missingValuesInColumn.txt", 'a+')
