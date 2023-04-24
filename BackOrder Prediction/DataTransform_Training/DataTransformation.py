@@ -6,14 +6,6 @@ from application_logging.logger import App_Logger
 
 class dataTransform:
 
-     """
-               This class shall be used for transforming the Good Raw Training Data before loading it in Database!!.
-
-               Written By: iNeuron Intelligence
-               Version: 1.0
-               Revisions: None
-
-               """
 
      def __init__(self):
           self.goodDataPath = "Training_Raw_files_validated/Good_Raw"
@@ -54,17 +46,6 @@ class dataTransform:
 
 
      def addQuotesToStringValuesInColumn(self):
-          """
-                                           Method Name: addQuotesToStringValuesInColumn
-                                           Description: This method converts all the columns with string datatype such that
-                                                       each value for that column is enclosed in quotes. This is done
-                                                       to avoid the error while inserting string values in table as varchar.
-
-                                            Written By: iNeuron Intelligence
-                                           Version: 1.0
-                                           Revisions: None
-
-                                                   """
 
           log_file = open("Training_Logs/addQuotesToStringValuesInColumn.txt", 'a+')
           try:
