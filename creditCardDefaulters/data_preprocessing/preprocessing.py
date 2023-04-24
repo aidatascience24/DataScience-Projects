@@ -117,9 +117,6 @@ class Preprocessor:
                                         Output: A Dataframe which has all the missing values imputed.
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
                      """
         self.logger_object.log(self.file_object, 'Entered the impute_missing_values method of the Preprocessor class')
         self.data= data
