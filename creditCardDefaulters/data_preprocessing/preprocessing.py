@@ -5,10 +5,6 @@ class Preprocessor:
     """
         This class shall  be used to clean and transform the data before training.
 
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
-
         """
 
     def __init__(self, file_object, logger_object):
@@ -77,10 +73,6 @@ class Preprocessor:
                         Output: Returns two separate Dataframes, one containing features and the other containing Labels .
                         On Failure: Raise Exception
 
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
-
                 """
         self.logger_object.log(self.file_object, 'Entered the separate_label_feature method of the Preprocessor class')
         try:
@@ -101,10 +93,6 @@ class Preprocessor:
                                 Output: Returns True if null values are present in the DataFrame, False if they are not present and
                                         returns the list of columns for which null values are present.
                                 On Failure: Raise Exception
-
-                                Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
 
                         """
         self.logger_object.log(self.file_object, 'Entered the is_null_present method of the Preprocessor class')
@@ -190,9 +178,7 @@ class Preprocessor:
                                                 Output: only the columns with categorical values converted to numerical values
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
-                                                Version: 1.0
-                                                Revisions: None
+                                           
                              """
         self.logger_object.log(self.file_object, 'Entered the encode_categorical_columns method of the Preprocessor class')
 
@@ -218,10 +204,6 @@ class Preprocessor:
         Description: This method handles the imbalanced dataset to make it a balanced one.
         Output: new balanced feature and target columns
         On Failure: Raise Exception
-
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
                                      """
         self.logger_object.log(self.file_object,
                                'Entered the handle_imbalanced_dataset method of the Preprocessor class')
